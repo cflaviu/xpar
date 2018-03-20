@@ -1,2 +1,2 @@
 # xpar
-Event based XML parser
+Fast and minimalist event based XML parser
