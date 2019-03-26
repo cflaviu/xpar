@@ -25,7 +25,7 @@ namespace stdext
 
 	struct xpar_default_config
 	{
-		typedef char char_type;
+		typedef char char_t;
 		static const char delimiter = '\"';
 
 		enum const_t
@@ -110,7 +110,6 @@ namespace stdext
 		void elem_continue();
 		void elem_end_continue();
 		void single_elem_end();
-		void attrContinue();
 		void attr_value_continue();
 		void data_continue();
 		void comment();
@@ -164,7 +163,8 @@ namespace stdext
 			switch (*ptr_)
 			{
 				case '_':
-				case ':': break;
+				case ':': 
+				case '-': break;
 				default:
 				{
 					if (!isalnum(*ptr_))
@@ -217,7 +217,7 @@ namespace stdext
 				{
 					if (!item_read_)
 					{
-						attrContinue();
+						attr_continue();
 					}
 					else
 					{
@@ -478,7 +478,7 @@ namespace stdext
 	void xpar<_Observer, _Config>::comment()
 	{
 		const char_t* text = ptr_;
-		int count = nullptr;
+		int count = 0;
 		while (ptr_ < end_)
 		{
 			switch (*ptr_)
@@ -500,7 +500,7 @@ namespace stdext
 				}
 				default:
 				{
-					count = nullptr;
+					count = 0;
 				}
 			}
 			++ptr_;
