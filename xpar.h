@@ -17,9 +17,9 @@ namespace stdext
 		void on_element_begin(xpar_t& parser, const char_t* name, const char_t* name_end);
 		void on_element_end(xpar_t& parser, const char_t* name, const char_t* name_end);
 		void on_attribute(xpar_t& parser, const char_t* name, const char_t* name_end);
-		void on_attribute_value(xpar_t& parser, const char_t* text, const char_t* textEnd, const bool partial);
-		void on_data(xpar_t& parser, const char_t* text, const char_t* textEnd, const bool partial);
-		void on_comment(xpar_t& parser, const char_t* text, const char_t* textEnd, const bool partial);
+		void on_attribute_value(xpar_t& parser, const char_t* text, const char_t* text_end, const bool partial);
+		void on_data(xpar_t& parser, const char_t* text, const char_t* text_end, const bool partial);
+		void on_comment(xpar_t& parser, const char_t* text, const char_t* text_end, const bool partial);
 		void on_error(xpar_t& parser, bool& try_continue);
 	};*/
 
@@ -163,7 +163,7 @@ namespace stdext
 			switch (*ptr_)
 			{
 				case '_':
-				case ':': 
+				case ':':
 				case '-': break;
 				default:
 				{
@@ -636,7 +636,7 @@ namespace stdext
 				case '\t':
 				case '\v':
 				case '\r':
-				case '\n': 
+				case '\n':
 				{
 					space();
 					break;
