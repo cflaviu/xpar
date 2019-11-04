@@ -102,7 +102,6 @@ namespace stdext
 		void attr();
 		void attr_or_attr_value();
 		void expect_attr_value();
-		void begin_attr_value();
 		void attr_value();
 		void attr_continue();
 		void data();
