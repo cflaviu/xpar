@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <programmer id="1">
+    <name>Bjarne Stroustroup</name>
+    <language>C++</language>
+    <birth>December 30, 1950</birth>
+    <country>Denmark</country>
+    <profession>Computer Scientist</profession>
+    <website>https://www.stroustrup.com/</website>
+  </programmer>
+  <programmer id="2">
+    <name>Dennis Ritchie</name>
+    <language>C</language>
+    <birth>September 9, 1941</birth>
+    <country>USA</country>
+    <profession>Physicist, Mathematical and BCS</profession>
+    <website>https://web.archive.org/</website>
+  </programmer>
+  <programmer id="3">
+    <name>Brian Kernighan</name>
+    <language>AWK</language>
+    <birth>January 1, 1942</birth>
+    <country>Canada</country>
+    <profession>Computer Scientist, Engineer and Professor</profession>
+    <website>https://www.cs.princeton.edu/~bwk/</website>
+  </programmer>
+</data>
+
