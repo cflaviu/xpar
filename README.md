@@ -1,5 +1,5 @@
 # xpar
-Fast and minimalist event based XML parser
+Fast and minimalist event based XML parser using C++14
 
 
 | expat                | yxml                 | xpar                 |
